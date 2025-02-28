@@ -19,13 +19,14 @@ To set up the project, create a virtual environment and install dependencies:
 python -m venv venv
 source venv/bin/activate   # On Windows, use venv\Scripts\activate
 pip install -r requirements.txt
+```
 
 ```python
 from utility_functions import load_smart_home_spending
 
 df = load_smart_home_spending("statistic_id693303_consumer_smart_home_spending_worldwide_2015_2025.xlsx")
 print(df.head())
-
+```
 
 ```python
 from utility_functions import bass_model
@@ -35,3 +36,4 @@ t = np.arange(0, 11)  # Time in years
 p, q, M = 0.03, 0.38, 100  # Example parameters
 adoption = bass_model(t, p, q, M)
 print(adoption)
+```
