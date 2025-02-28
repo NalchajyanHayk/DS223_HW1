@@ -6,10 +6,21 @@ This project analyzes global consumer spending on smart home technology and impl
 
 ## 📂 Project Structure
 
-- `statistic_id693303_consumer_smart_home_spending_worldwide_2015_2025.xlsx`: The dataset containing consumer spending data from 2015 to 2025.
-- `utility_functions.py`: Contains data processing and modeling functions.
-- `DS223_HW1_Hayk_Nalchajyan.ipynb`: A Jupyter notebook implementing the analysis and modeling.
-- `requirements.txt`: A list of dependencies required to run the project.
+- `statistic_id693303_consumer_smart_home_spending_worldwide_2015_2025.xlsx` - The dataset containing consumer spending data from 2015 to 2025.
+- `images/`
+  - `bass_model_adopters.png` - Plot of estimated adopters over time.
+  - `bass_model_plot.png` - Plot of the Bass Model fit.
+- `report/`
+  - `DS223_HW1_Hayk_Nalchajyan.pdf` - Final report submission.
+  - `report.pdf` - Additional report document.
+- `scripts/`
+  - `utility_functions.py` - Contains data processing and modeling functions.
+- `venv/` - Virtual environment directory.
+- `README.md` - This file.
+- `requirements.txt` - List of dependencies required to run the project.
+- `DS223_HW1_Hayk_Nalchajyan.ipynb` - A Jupyter Notebook implementing the analysis and modeling.
+
+---
 
 ## ⚙️ Installation
 
@@ -19,8 +30,6 @@ To set up the project, create a virtual environment and install dependencies:
 python -m venv venv
 source venv/bin/activate   # On Windows, use venv\Scripts\activate
 pip install -r requirements.txt
-```
-
 ```python
 from utility_functions import load_smart_home_spending
 
